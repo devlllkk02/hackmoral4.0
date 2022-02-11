@@ -1,5 +1,155 @@
+@import "../theme/theme.scss";
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+.hackmoral {
+  font-family: "Mulish", sans-serif;
+  background-color: $bgBlue;
+  /* Landing Page */
+  .landingPage {
+    width: 100%;
+    height: 100vh;
+
+    .landingPage__overlay {
+      height: 100vh;
+      width: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+      @include flexbox;
+
+      .landingPage__container {
+        // background-color: lightgreen;
+        width: 500px;
+        height: 500px;
+        @include flexbox;
+        flex-direction: column;
+        .landingPage__image {
+          width: 100%;
+          height: 300px;
+          // background-color: lightcoral;
+          @include flexbox;
+          img {
+            height: 350px;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+        .landingPage__countdown {
+          width: 100%;
+          height: 150px;
+          // background-color: lightblue;
+          @include flexbox;
+          // justify-content: space-between;
+
+          .landingPage__countdown__item {
+            width: 100px;
+            height: 100%;
+            // background-color: lightseagreen;
+
+            @include flexbox;
+            .landingPage__countdown__item__number {
+              width: 70px;
+              height: 100%;
+              // background-color: lightsalmon;
+              @include flexbox;
+
+              font-size: 48px;
+              font-weight: bold;
+              color: $green;
+            }
+            .landingPage__countdown__item__word {
+              width: 30px;
+              height: 100%;
+              // background-color: lightseagreen;
+              @include flexbox;
+              writing-mode: vertical-rl;
+              font-weight: bold;
+              color: $white;
+              font-size: $font-extra-small;
+            }
+          }
+
+          .landingPage__countdown__dot {
+            width: 30px;
+            height: 100%;
+            // background-color: lightgreen;
+            @include flexbox;
+            flex-direction: column;
+
+            :nth-child(1) {
+              min-width: 7px;
+              min-height: 7px;
+              background-color: $white;
+              margin-bottom: 5px;
+            }
+            :nth-child(2) {
+              min-width: 7px;
+              min-height: 7px;
+              background-color: $white;
+              margin-top: 5px;
+            }
+          }
+        }
+        .landingPage__buttons {
+          width: 100%;
+          height: 80px;
+          // background-color: lightcoral;
+          @include flexbox;
+          .landingPage__buttons__contest {
+            @include buttonGreenDark;
+            margin-right: 10px;
+          }
+          .landingPage__buttons__leaderboard {
+            @include buttonBlueDark;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  /* What is HackMoral | Introduction */
+
+  .introduction {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../images/WhatIsHackMoral4.0.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flexbox;
+
+    .introduction__container {
+      width: 60%;
+      height: 400px;
+      // background-color: lightgreen;
+
+      .introduction__heading {
+        width: 100%;
+        height: 100px;
+        // background-color: lightcoral;
+        @include flexbox;
+
+        p {
+          font-size: $font-extra-large;
+          font-weight: bold;
+          color: $green;
+          text-transform: uppercase;
+        }
+      }
+
+      .introduction__description {
+        width: 100%;
+        height: 150px;
+
+        p {
+          color: $white;
+          font-size: $font-medium;
+          text-align: center;
+        }
+      }
+    }
+  }
 }

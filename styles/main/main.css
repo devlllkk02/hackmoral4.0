@@ -4,4 +4,277 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.hackmoral {
+  font-family: "Mulish", sans-serif;
+  background-color: #020a1f;
+  /* Landing Page */
+  /* What is HackMoral | Introduction */
+}
+
+.hackmoral .landingPage {
+  width: 100%;
+  height: 100vh;
+}
+
+.hackmoral .landingPage .landingPage__overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container {
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__image {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__image img {
+  height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__item {
+  width: 100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__item .landingPage__countdown__item__number {
+  width: 70px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: #65f0de;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__item .landingPage__countdown__item__word {
+  width: 30px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__dot {
+  width: 30px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__dot :nth-child(1) {
+  min-width: 7px;
+  min-height: 7px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__dot :nth-child(2) {
+  min-width: 7px;
+  min-height: 7px;
+  background-color: #ffffff;
+  margin-top: 5px;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__buttons {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__buttons .landingPage__buttons__contest {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  color: #020a1f;
+  background-color: #65f0de;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin-right: 10px;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__buttons .landingPage__buttons__contest:hover {
+  background-color: #15dac0;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__buttons .landingPage__buttons__leaderboard {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  color: #020a1f;
+  background-color: #0dc8fe;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin-left: 10px;
+}
+
+.hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__buttons .landingPage__buttons__leaderboard:hover {
+  background-color: #01a7d7;
+}
+
+.hackmoral .introduction {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../images/WhatIsHackMoral4.0.png);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .introduction .introduction__container {
+  width: 60%;
+  height: 400px;
+}
+
+.hackmoral .introduction .introduction__container .introduction__heading {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .introduction .introduction__container .introduction__heading p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #65f0de;
+  text-transform: uppercase;
+}
+
+.hackmoral .introduction .introduction__container .introduction__description {
+  width: 100%;
+  height: 150px;
+}
+
+.hackmoral .introduction .introduction__container .introduction__description p {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

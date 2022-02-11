@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--? Styles -->
+    <link rel="stylesheet" href="./styles/main/main.css" />
+    <title>HackMoral 4.0</title>
+    <!--? Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="hackmoral">
+    <!-- Landing Page -->
+    <div id="landingPage" class="landingPage">
+      <div class="landingPage__overlay">
+        <div class="landingPage__container">
+          <div class="landingPage__image">
+            <img src="./images/HackMoral4.0-Logo.png" alt="" />
+          </div>
+          <div class="landingPage__countdown">
+            <!-- Days -->
+            <div class="landingPage__countdown__item">
+              <div
+                class="landingPage__countdown__item__number"
+                id="timer__days"
+              >
+                00
+              </div>
+              <div class="landingPage__countdown__item__word">DAYS</div>
+            </div>
+            <div class="landingPage__countdown__dot">
+              <div></div>
+              <div></div>
+            </div>
+            <!-- Hours -->
+            <div class="landingPage__countdown__item">
+              <div
+                class="landingPage__countdown__item__number"
+                id="timer__hours"
+              >
+                00
+              </div>
+              <div class="landingPage__countdown__item__word">HOURS</div>
+            </div>
+            <div class="landingPage__countdown__dot">
+              <div></div>
+              <div></div>
+            </div>
+            <!-- Minutes -->
+            <div class="landingPage__countdown__item">
+              <div
+                class="landingPage__countdown__item__number"
+                id="timer__minutes"
+              >
+                00
+              </div>
+              <div class="landingPage__countdown__item__word">MINUTES</div>
+            </div>
+            <div class="landingPage__countdown__dot">
+              <div></div>
+              <div></div>
+            </div>
+            <!-- Seconds -->
+            <div class="landingPage__countdown__item">
+              <div
+                class="landingPage__countdown__item__number"
+                id="timer__seconds"
+              >
+                00
+              </div>
+              <div class="landingPage__countdown__item__word">SECONDS</div>
+            </div>
+          </div>
+          <div class="landingPage__buttons">
+            <button class="landingPage__buttons__contest">contest</button>
+            <button class="landingPage__buttons__leaderboard">
+              leaderboard
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- What is HackMoral | Introduction-->
+    <div class="introduction">
+      <div class="introduction__container">
+        <div class="introduction__heading">
+          <p>What is HackMoral 4.0 ?</p>
+        </div>
+        <div class="introduction__description">
+          <p>
+            Hack Moral 4.0 is a mini Hackathon hosted by the INTECS, University
+            of Moratuwa. It is a focused 5-hour event. All the challenges you
+            are going to be faced on the HackerRank platform are set by our team
+            of exceptional Question moderators. This event is exclusive for
+            technophiles of FIT19. During the event, your goal is to showcase
+            your problem-solving skills to hunt for points by reaching out to
+            the solutions.
+          </p>
+        </div>
+        <div class="introduction__description">
+          <p>
+            Live leaderboard metrics will let you know how your colleagues are
+            performing and will keep you motivated to drive results by improving
+            on your past performance. Tune the pitch and let the game on!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="/lib/three.r119.min.js"></script>
+    <script src="/lib/vanta.net.min.js"></script>
+    <script>
+      VANTA.NET({
+        el: "#landingPage",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 100.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: "#65f0de",
+        backgroundColor: "#010f2b",
+        points: 15.0,
+        maxDistance: 20.0,
+      });
+    </script>
+    <script src="./main.js"></script>
+
+  </body>
+</html>
