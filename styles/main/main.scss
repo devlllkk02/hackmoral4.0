@@ -1,0 +1,540 @@
+@import "../theme/theme.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.hackmoral {
+  font-family: "Mulish", sans-serif;
+  background-color: $bgBlue;
+  /* Landing Page */
+  .landingPage {
+    width: 100%;
+    height: 100vh;
+
+    .landingPage__overlay {
+      height: 100vh;
+      width: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+      @include flexbox;
+
+      .landingPage__container {
+        // background-color: lightgreen;
+        width: 500px;
+        height: 500px;
+        @include flexbox;
+        flex-direction: column;
+        .landingPage__image {
+          width: 100%;
+          height: 300px;
+          // background-color: lightcoral;
+          @include flexbox;
+          img {
+            height: 350px;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+        .landingPage__countdown {
+          width: 100%;
+          height: 150px;
+          // background-color: lightblue;
+          @include flexbox;
+          // justify-content: space-between;
+
+          .landingPage__countdown__item {
+            width: 100px;
+            height: 100%;
+            // background-color: lightseagreen;
+
+            @include flexbox;
+            .landingPage__countdown__item__number {
+              width: 70px;
+              height: 100%;
+              // background-color: lightsalmon;
+              @include flexbox;
+
+              font-size: 48px;
+              font-weight: bold;
+              color: $green;
+            }
+            .landingPage__countdown__item__word {
+              width: 30px;
+              height: 100%;
+              // background-color: lightseagreen;
+              @include flexbox;
+              writing-mode: vertical-rl;
+              font-weight: bold;
+              color: $white;
+              font-size: $font-extra-small;
+            }
+          }
+
+          .landingPage__countdown__dot {
+            width: 30px;
+            height: 100%;
+            // background-color: lightgreen;
+            @include flexbox;
+            flex-direction: column;
+
+            :nth-child(1) {
+              min-width: 7px;
+              min-height: 7px;
+              background-color: $white;
+              margin-bottom: 5px;
+            }
+            :nth-child(2) {
+              min-width: 7px;
+              min-height: 7px;
+              background-color: $white;
+              margin-top: 5px;
+            }
+          }
+        }
+        .landingPage__buttons {
+          width: 100%;
+          height: 80px;
+          // background-color: lightcoral;
+          @include flexbox;
+          .landingPage__buttons__contest {
+            @include buttonGreenDark;
+            margin-right: 10px;
+          }
+          .landingPage__buttons__leaderboard {
+            @include buttonBlueDark;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  /* What is HackMoral | Introduction */
+  .introduction {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../images/WhatIsHackMoral4.0.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flexbox;
+
+    .introduction__overlay {
+      width: 100%;
+      height: 100vh;
+      @include flexbox;
+
+      background-image: url(../../images/ShadowOverlay.png);
+      background-position: bottom center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      .introduction__container {
+        width: 60%;
+        height: 400px;
+        // background-color: lightgreen;
+
+        .introduction__heading {
+          width: 100%;
+          height: 100px;
+          // background-color: lightcoral;
+          @include flexbox;
+
+          p {
+            font-size: $font-extra-large;
+            font-weight: bold;
+            color: $green;
+            text-transform: uppercase;
+          }
+        }
+
+        .introduction__description {
+          width: 100%;
+          height: 150px;
+
+          p {
+            color: $white;
+            font-size: $font-medium;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  /* About | Cards */
+  .cards {
+    width: 100%;
+    height: 100vh;
+    // background-color: lightgreen;
+    @include flexbox;
+
+    .cards__container {
+      width: 80%;
+      height: 400px;
+      // background-color: lightcoral;
+      @include flexbox;
+      justify-content: space-between;
+      .card {
+        width: 250px;
+        height: 350px;
+        // background-color: lightblue;
+
+        @include flexbox;
+        flex-direction: column;
+
+        border: 1.5px solid $green;
+        border-radius: 25px;
+        box-shadow: 0px 0px 27px -2px $green;
+        transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+        &:hover {
+          transform: scale(1.02);
+          box-shadow: 0px 0px 27px 5px $green;
+        }
+
+        .card__image {
+          width: 100%;
+          height: 130px;
+          // background-color: lightpink;
+          @include flexbox;
+          img {
+            height: 70px;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+        .card__heading {
+          width: 100%;
+          height: 50px;
+          // background-color: lightgrey;
+          @include flexbox;
+          p {
+            font-size: $font-medium;
+            color: $green;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+        .card__body {
+          width: 100%;
+          height: 170px;
+          // background-color: lightseagreen;
+          p {
+            font-size: $font-small;
+            color: $white;
+            text-align: center;
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+
+  /* How it Works */
+  .hiw {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../images/HowItWorks.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flexbox;
+
+    .hiw__overlay {
+      width: 100%;
+      height: 100vh;
+      @include flexbox;
+
+      background-image: url(../../images/ShadowOverlay.png);
+      background-position: bottom center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      .hiw__container {
+        width: 60%;
+        height: 400px;
+        // background-color: lightgreen;
+
+        .hiw__heading {
+          width: 100%;
+          height: 100px;
+          // background-color: lightcoral;
+          @include flexbox;
+
+          p {
+            font-size: $font-extra-large;
+            font-weight: bold;
+            color: $green;
+            text-transform: uppercase;
+          }
+        }
+
+        .hiw__description {
+          width: 100%;
+          height: 150px;
+
+          p {
+            color: $white;
+            font-size: $font-medium;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  /* Timeline */
+  .timeline {
+    width: 100%;
+    height: 700px;
+    @include flexbox;
+    .timeline__container {
+      width: 80%;
+      height: 700px;
+      background-color: lightgreen;
+
+      .timeline__heading {
+        width: 100%;
+        height: 100px;
+        background-color: lightcoral;
+        @include flexbox;
+        p {
+          font-size: $font-extra-large;
+          font-weight: bold;
+          color: $green;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  /* Awards */
+  .awards {
+    width: 100%;
+    height: 100vh;
+    // background-color: lightcoral;
+    @include flexbox;
+    flex-direction: column;
+
+    .awards__title {
+      width: 100%;
+      height: 100px;
+      // background-color: lightseagreen;
+      @include flexbox;
+      p {
+        font-size: $font-extra-large;
+        font-weight: bold;
+        color: $green;
+        text-transform: uppercase;
+      }
+    }
+
+    .awards__container {
+      width: 80%;
+      height: calc(100vh - 200px);
+      // background-color: lightblue;
+      @include flexbox;
+      justify-content: space-between;
+
+      .awards__cards {
+        width: 250px;
+        height: 350px;
+        // background-color: lightpink;
+
+        @include flexbox;
+        flex-direction: column;
+
+        border: 1.5px solid $green;
+        border-radius: 25px;
+        box-shadow: 0px 0px 27px -2px $green;
+        transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+
+        &:hover {
+          transform: scale(1.02);
+          box-shadow: 0px 0px 27px 5px $green;
+        }
+
+        .awards__card__image {
+          width: 100%;
+          height: 60%;
+          // background-color: lightgreen;
+          @include flexbox;
+        }
+        .awards__card__name {
+          width: 100%;
+          height: 40%;
+          // background-color: lightcoral;
+          @include flexbox;
+          p {
+            font-size: $font-medium;
+            color: $green;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .awards__card1 {
+        height: 325px;
+        width: 225px;
+        border: 1.5px solid $silver;
+        border-radius: 25px;
+        box-shadow: 0px 0px 27px -2px $silver;
+
+        &:hover {
+          transform: scale(1.02);
+          box-shadow: 0px 0px 27px 5px $silver;
+        }
+
+        .awards__card__name {
+          width: 100%;
+          height: 30%;
+          // background-color: lightcoral;
+          @include flexbox;
+          p {
+            font-size: $font-medium;
+            color: $silver;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .awards__card2 {
+        border: 1.5px solid $gold;
+        border-radius: 25px;
+        box-shadow: 0px 0px 27px -2px $gold;
+
+        &:hover {
+          transform: scale(1.02);
+          box-shadow: 0px 0px 27px 5px $gold;
+        }
+
+        .awards__card__name {
+          width: 100%;
+          height: 30%;
+          // background-color: lightcoral;
+          @include flexbox;
+          p {
+            font-size: $font-large;
+            color: $bronze;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .awards__card3 {
+        height: 325px;
+        width: 225px;
+        border: 1.5px solid $bronze;
+        border-radius: 25px;
+        box-shadow: 0px 0px 27px -2px $bronze;
+
+        &:hover {
+          transform: scale(1.02);
+          box-shadow: 0px 0px 27px 5px $bronze;
+        }
+
+        .awards__card__name {
+          width: 100%;
+          height: 30%;
+          // background-color: lightcoral;
+          @include flexbox;
+          p {
+            font-size: $font-medium;
+            color: $bronze;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .awards__footer {
+      width: 100%;
+      height: 100px;
+      // background-color: lightseagreen;
+      @include flexbox;
+      p {
+        font-size: $font-small;
+        font-weight: bold;
+        color: $white;
+      }
+    }
+  }
+
+  /* Footer */
+  .footer {
+    width: 100%;
+    height: 150px;
+    // background-color: lightgrey;
+    @include flexbox;
+    .footer__container {
+      width: 80%;
+      height: 100%;
+      // background-color: lightcoral;
+      @include flexbox;
+      .footer__intecs {
+        width: 100px;
+        height: 100%;
+        // background-color: lightgreen;
+        @include flexbox;
+
+        img {
+          height: 70px;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+      .footer__content {
+        width: calc(100% - 200px);
+        height: 100%;
+        @include flexbox;
+        flex-direction: column;
+        .footer__content__links {
+          width: 100%;
+          height: 40px;
+          // background-color: lightblue;
+
+          @include flexbox;
+          .footer__content__link {
+            width: 40px;
+            height: 24px;
+            // background-color: lightgreen;
+            @include flexbox;
+            a {
+              @include flexbox;
+              img {
+                height: 16px;
+                object-fit: contain;
+                object-position: center;
+                cursor: pointer;
+                filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(189deg)
+                  brightness(120%) contrast(101%);
+              }
+            }
+          }
+        }
+        .footer__content__copyright {
+          width: 100%;
+          height: 40px;
+          // background-color: lightseagreen;
+          @include flexbox;
+          p {
+            font-size: $font-small;
+            color: $white;
+          }
+        }
+      }
+      .footer__uom {
+        width: 100px;
+        height: 100%;
+        background-color: lightgreen;
+        @include flexbox;
+        img {
+          height: 70px;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+  }
+}
