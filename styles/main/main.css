@@ -12,6 +12,9 @@
   /* What is HackMoral | Introduction */
   /* About | Cards */
   /* How it Works */
+  /* Timeline */
+  /* Awards */
+  /* Footer */
 }
 
 .hackmoral .landingPage {
@@ -349,6 +352,17 @@
   border-radius: 25px;
   -webkit-box-shadow: 0px 0px 27px -2px #65f0de;
           box-shadow: 0px 0px 27px -2px #65f0de;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+}
+
+.hackmoral .cards .cards__container .card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 27px 5px #65f0de;
+          box-shadow: 0px 0px 27px 5px #65f0de;
 }
 
 .hackmoral .cards .cards__container .card .card__image {
@@ -477,5 +491,460 @@
   color: #ffffff;
   font-size: 16px;
   text-align: center;
+}
+
+.hackmoral .timeline {
+  width: 100%;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container {
+  width: 80%;
+  height: 700px;
+  background-color: lightgreen;
+}
+
+.hackmoral .timeline .timeline__container .timeline__heading {
+  width: 100%;
+  height: 100px;
+  background-color: lightcoral;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__heading p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #65f0de;
+  text-transform: uppercase;
+}
+
+.hackmoral .awards {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hackmoral .awards .awards__title {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .awards .awards__title p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #65f0de;
+  text-transform: uppercase;
+}
+
+.hackmoral .awards .awards__container {
+  width: 80%;
+  height: calc(100vh - 200px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hackmoral .awards .awards__container .awards__cards {
+  width: 250px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1.5px solid #65f0de;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 27px -2px #65f0de;
+          box-shadow: 0px 0px 27px -2px #65f0de;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+}
+
+.hackmoral .awards .awards__container .awards__cards:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 27px 5px #65f0de;
+          box-shadow: 0px 0px 27px 5px #65f0de;
+}
+
+.hackmoral .awards .awards__container .awards__cards .awards__card__image {
+  width: 100%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .awards .awards__container .awards__cards .awards__card__name {
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .awards .awards__container .awards__cards .awards__card__name p {
+  font-size: 16px;
+  color: #65f0de;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hackmoral .awards .awards__container .awards__card1 {
+  height: 325px;
+  width: 225px;
+  border: 1.5px solid #c0c0c0;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 27px -2px #c0c0c0;
+          box-shadow: 0px 0px 27px -2px #c0c0c0;
+}
+
+.hackmoral .awards .awards__container .awards__card1:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 27px 5px #c0c0c0;
+          box-shadow: 0px 0px 27px 5px #c0c0c0;
+}
+
+.hackmoral .awards .awards__container .awards__card1 .awards__card__name {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .awards .awards__container .awards__card1 .awards__card__name p {
+  font-size: 16px;
+  color: #c0c0c0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hackmoral .awards .awards__container .awards__card2 {
+  border: 1.5px solid #ffd700;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 27px -2px #ffd700;
+          box-shadow: 0px 0px 27px -2px #ffd700;
+}
+
+.hackmoral .awards .awards__container .awards__card2:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 27px 5px #ffd700;
+          box-shadow: 0px 0px 27px 5px #ffd700;
+}
+
+.hackmoral .awards .awards__container .awards__card2 .awards__card__name {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .awards .awards__container .awards__card2 .awards__card__name p {
+  font-size: 18px;
+  color: #cd7f32;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hackmoral .awards .awards__container .awards__card3 {
+  height: 325px;
+  width: 225px;
+  border: 1.5px solid #cd7f32;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 27px -2px #cd7f32;
+          box-shadow: 0px 0px 27px -2px #cd7f32;
+}
+
+.hackmoral .awards .awards__container .awards__card3:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 27px 5px #cd7f32;
+          box-shadow: 0px 0px 27px 5px #cd7f32;
+}
+
+.hackmoral .awards .awards__container .awards__card3 .awards__card__name {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .awards .awards__container .awards__card3 .awards__card__name p {
+  font-size: 16px;
+  color: #cd7f32;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hackmoral .awards .awards__footer {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .awards .awards__footer p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hackmoral .footer {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .footer .footer__container {
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .footer .footer__container .footer__intecs {
+  width: 100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .footer .footer__container .footer__intecs img {
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.hackmoral .footer .footer__container .footer__content {
+  width: calc(100% - 200px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hackmoral .footer .footer__container .footer__content .footer__content__links {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .footer .footer__container .footer__content .footer__content__links .footer__content__link {
+  width: 40px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .footer .footer__container .footer__content .footer__content__links .footer__content__link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .footer .footer__container .footer__content .footer__content__links .footer__content__link a img {
+  height: 16px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  cursor: pointer;
+  -webkit-filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(189deg) brightness(120%) contrast(101%);
+          filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(189deg) brightness(120%) contrast(101%);
+}
+
+.hackmoral .footer .footer__container .footer__content .footer__content__copyright {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .footer .footer__container .footer__content .footer__content__copyright p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.hackmoral .footer .footer__container .footer__uom {
+  width: 100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .footer .footer__container .footer__uom img {
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 /*# sourceMappingURL=main.css.map */
