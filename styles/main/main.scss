@@ -285,17 +285,17 @@
   /* Timeline */
   .timeline {
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     @include flexbox;
     .timeline__container {
       width: 80%;
-      height: 700px;
-      background-color: lightgreen;
+      min-height: 700px;
+      // background-color: lightgreen;
 
       .timeline__heading {
         width: 100%;
         height: 100px;
-        background-color: lightcoral;
+        // background-color: lightcoral;
         @include flexbox;
         p {
           font-size: $font-extra-large;
@@ -304,9 +304,301 @@
           text-transform: uppercase;
         }
       }
+
+      .timeline__body {
+        width: 100%;
+        min-height: 700px;
+        // background-color: lightpink;
+        @include flexbox;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .timeline__item1 {
+          width: 80%;
+          height: 250px;
+          // background-color: lightgreen;
+          @include flexbox;
+          .timeline__item1__content {
+            height: 100%;
+            width: calc((100% - 80px) / 2);
+            // background-color: lightblue;
+            @include flexbox;
+
+            .timeline__item1__content__card {
+              width: 100%;
+              height: 200px;
+              // background-color: lightblue;
+
+              @include flexbox;
+              flex-direction: column;
+
+              border: 1.5px solid $green;
+              border-radius: 25px;
+              box-shadow: 0px 0px 27px -2px $green;
+
+              .timeline__item1__content__card__title {
+                width: 100%;
+                height: 60px;
+                // background-color: lightseagreen;
+                @include flexbox;
+
+                p {
+                  font-size: $font-medium;
+                  text-transform: uppercase;
+                  font-weight: bold;
+                  color: $green;
+                }
+              }
+              .timeline__item1__content__card__body {
+                width: 100%;
+                height: 70px;
+                // background-color: lightsalmon;
+
+                p {
+                  font-size: $font-small;
+                  color: $white;
+                  text-align: center;
+                  padding: 5px 15px;
+                }
+              }
+              .timeline__item1__content__card__button {
+                width: 100%;
+                height: 70px;
+                // background-color: lightgreen;
+                a {
+                  width: 100%;
+                  height: 100%;
+                  @include flexbox;
+                  text-decoration: none;
+                  button {
+                    @include buttonBlueDark;
+                    font-size: $font-small;
+                  }
+                }
+              }
+            }
+          }
+          .timeline__item1__border {
+            height: 100%;
+            width: 80px;
+            // background-color: lightyellow;
+            @include flexbox;
+            position: relative;
+            .timeline__item1__border__line {
+              width: 3px;
+              height: 250px;
+              background-color: $green;
+            }
+
+            .timeline__item1__border__image {
+              width: 50px;
+              height: 50px;
+              // background-color: lightseagreen;
+              background-color: $bgBlue;
+
+              position: absolute;
+              border-radius: 50%;
+              border: 3px solid $green;
+              @include flexbox;
+              img {
+                height: 30px;
+                object-fit: contain;
+                object-position: center;
+              }
+            }
+          }
+          .timeline__item1__date {
+            height: 100%;
+            width: calc((100% - 80px) / 2);
+            // background-color: lightblue;
+            @include flexbox;
+
+            .timeline__item1__date__box {
+              width: 100%;
+              height: 50px;
+              background-color: $blue;
+              @include flexbox;
+              p {
+                color: $bgBlue;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+
+        .timeline__item2 {
+          width: 80%;
+          height: 250px;
+          // background-color: lightgreen;
+          @include flexbox;
+          .timeline__item2__content {
+            height: 100%;
+            width: calc((100% - 80px) / 2);
+            // background-color: lightblue;
+            @include flexbox;
+
+            .timeline__item2__content__card {
+              width: 100%;
+              height: 200px;
+              // background-color: lightblue;
+
+              @include flexbox;
+              flex-direction: column;
+
+              border: 1.5px solid $green;
+              border-radius: 25px;
+              box-shadow: 0px 0px 27px -2px $green;
+
+              .timeline__item2__content__card__title {
+                width: 100%;
+                height: 60px;
+                // background-color: lightseagreen;
+                @include flexbox;
+
+                p {
+                  font-size: $font-medium;
+                  text-transform: uppercase;
+                  font-weight: bold;
+                  color: $green;
+                }
+              }
+              .timeline__item2__content__card__body {
+                width: 100%;
+                height: 70px;
+                // background-color: lightsalmon;
+
+                p {
+                  font-size: $font-small;
+                  color: $white;
+                  text-align: center;
+                  padding: 5px 15px;
+                }
+              }
+              .timeline__item2__content__card__button {
+                width: 100%;
+                height: 70px;
+                // background-color: lightgreen;
+                a {
+                  width: 100%;
+                  height: 100%;
+                  @include flexbox;
+                  text-decoration: none;
+                  button {
+                    @include buttonBlueDark;
+                    font-size: $font-small;
+                  }
+                }
+              }
+            }
+          }
+          .timeline__item2__border {
+            height: 100%;
+            width: 80px;
+            // background-color: lightyellow;
+            @include flexbox;
+            position: relative;
+            .timeline__item2__border__line {
+              width: 3px;
+              height: 250px;
+              background-color: $green;
+            }
+
+            .timeline__item2__border__image {
+              width: 50px;
+              height: 50px;
+              // background-color: lightseagreen;
+              background-color: $bgBlue;
+
+              position: absolute;
+              border-radius: 50%;
+              border: 3px solid $green;
+              @include flexbox;
+              img {
+                height: 30px;
+                object-fit: contain;
+                object-position: center;
+              }
+            }
+          }
+          .timeline__item2__date {
+            height: 100%;
+            width: calc((100% - 80px) / 2);
+            // background-color: lightblue;
+            @include flexbox;
+
+            .timeline__item2__date__box {
+              width: 100%;
+              height: 50px;
+              background-color: $blue;
+              @include flexbox;
+              p {
+                color: $bgBlue;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+      }
     }
   }
+  /* Rules */
+  .rules {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../images/WhatIsHackMoral4.0.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flexbox;
 
+    .rules__overlay {
+      width: 100%;
+      height: 100vh;
+      @include flexbox;
+
+      background-image: url(../../images/ShadowOverlay.png);
+      background-position: bottom center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      .rules__container {
+        width: 80%;
+        height: 100vh;
+        // background-color: lightgreen;
+
+        .rules__heading {
+          width: 100%;
+          height: 100px;
+          // background-color: lightcoral;
+          @include flexbox;
+
+          p {
+            font-size: $font-extra-large;
+            font-weight: bold;
+            color: $green;
+            text-transform: uppercase;
+          }
+        }
+
+        .rules__body {
+          width: 100%;
+          height: 500px;
+          // background-color: lightseagreen;
+
+          ul {
+            margin-left: 12px;
+            li {
+              color: $white;
+              padding: 10px 0px;
+              font-size: $font-small;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
   /* Awards */
   .awards {
     width: 100%;

@@ -13,6 +13,7 @@
   /* About | Cards */
   /* How it Works */
   /* Timeline */
+  /* Rules */
   /* Awards */
   /* Footer */
 }
@@ -495,7 +496,7 @@
 
 .hackmoral .timeline {
   width: 100%;
-  height: 700px;
+  min-height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,14 +510,12 @@
 
 .hackmoral .timeline .timeline__container {
   width: 80%;
-  height: 700px;
-  background-color: lightgreen;
+  min-height: 700px;
 }
 
 .hackmoral .timeline .timeline__container .timeline__heading {
   width: 100%;
   height: 100px;
-  background-color: lightcoral;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,6 +532,515 @@
   font-weight: bold;
   color: #65f0de;
   text-transform: uppercase;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body {
+  width: 100%;
+  min-height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 {
+  width: 80%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content {
+  height: 100%;
+  width: calc((100% - 80px) / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1.5px solid #65f0de;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 27px -2px #65f0de;
+          box-shadow: 0px 0px 27px -2px #65f0de;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__title {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__title p {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #65f0de;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__body {
+  width: 100%;
+  height: 70px;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__body p {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__button {
+  width: 100%;
+  height: 70px;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__button a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__button a button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  color: #020a1f;
+  background-color: #0dc8fe;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-size: 14px;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__button a button:hover {
+  background-color: #01a7d7;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__border {
+  height: 100%;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__border .timeline__item1__border__line {
+  width: 3px;
+  height: 250px;
+  background-color: #65f0de;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__border .timeline__item1__border__image {
+  width: 50px;
+  height: 50px;
+  background-color: #020a1f;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #65f0de;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__border .timeline__item1__border__image img {
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__date {
+  height: 100%;
+  width: calc((100% - 80px) / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__date .timeline__item1__date__box {
+  width: 100%;
+  height: 50px;
+  background-color: #0dc8fe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__date .timeline__item1__date__box p {
+  color: #020a1f;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 {
+  width: 80%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content {
+  height: 100%;
+  width: calc((100% - 80px) / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1.5px solid #65f0de;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 27px -2px #65f0de;
+          box-shadow: 0px 0px 27px -2px #65f0de;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__title {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__title p {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #65f0de;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__body {
+  width: 100%;
+  height: 70px;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__body p {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__button {
+  width: 100%;
+  height: 70px;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__button a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__button a button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  color: #020a1f;
+  background-color: #0dc8fe;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-size: 14px;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__button a button:hover {
+  background-color: #01a7d7;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__border {
+  height: 100%;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__border .timeline__item2__border__line {
+  width: 3px;
+  height: 250px;
+  background-color: #65f0de;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__border .timeline__item2__border__image {
+  width: 50px;
+  height: 50px;
+  background-color: #020a1f;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #65f0de;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__border .timeline__item2__border__image img {
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__date {
+  height: 100%;
+  width: calc((100% - 80px) / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__date .timeline__item2__date__box {
+  width: 100%;
+  height: 50px;
+  background-color: #0dc8fe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__date .timeline__item2__date__box p {
+  color: #020a1f;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hackmoral .rules {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../images/WhatIsHackMoral4.0.png);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .rules .rules__overlay {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../../images/ShadowOverlay.png);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hackmoral .rules .rules__overlay .rules__container {
+  width: 80%;
+  height: 100vh;
+}
+
+.hackmoral .rules .rules__overlay .rules__container .rules__heading {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hackmoral .rules .rules__overlay .rules__container .rules__heading p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #65f0de;
+  text-transform: uppercase;
+}
+
+.hackmoral .rules .rules__overlay .rules__container .rules__body {
+  width: 100%;
+  height: 500px;
+}
+
+.hackmoral .rules .rules__overlay .rules__container .rules__body ul {
+  margin-left: 12px;
+}
+
+.hackmoral .rules .rules__overlay .rules__container .rules__body ul li {
+  color: #ffffff;
+  padding: 10px 0px;
+  font-size: 14px;
+  text-align: justify;
 }
 
 .hackmoral .awards {
