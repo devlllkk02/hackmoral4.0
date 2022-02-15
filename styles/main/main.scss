@@ -5,6 +5,11 @@
   padding: 0px;
   box-sizing: border-box;
 }
+::selection {
+  color: $bgBlue;
+  background: $green;
+}
+
 .hackmoral {
   font-family: "Mulish", sans-serif;
   background-color: $bgBlue;
@@ -14,8 +19,8 @@
     height: 100vh;
 
     .landingPage__overlay {
-      height: 100vh;
       width: 100%;
+      height: 100vh;
       background-color: rgba($color: #000000, $alpha: 0.3);
       @include flexbox;
 
@@ -113,7 +118,7 @@
   /* What is HackMoral | Introduction */
   .introduction {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../../images/WhatIsHackMoral4.0.png);
     background-position: top center;
     background-size: cover;
@@ -122,7 +127,7 @@
 
     .introduction__overlay {
       width: 100%;
-      height: 100vh;
+      min-height: 100vh;
       @include flexbox;
 
       background-image: url(../../images/ShadowOverlay.png);
@@ -131,7 +136,7 @@
       background-repeat: no-repeat;
       .introduction__container {
         width: 60%;
-        height: 400px;
+        min-height: 400px;
         // background-color: lightgreen;
 
         .introduction__heading {
@@ -145,12 +150,13 @@
             font-weight: bold;
             color: $green;
             text-transform: uppercase;
+            text-align: center;
           }
         }
 
         .introduction__description {
           width: 100%;
-          height: 150px;
+          min-height: 150px;
 
           p {
             color: $white;
@@ -165,15 +171,21 @@
   /* About | Cards */
   .cards {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     // background-color: lightgreen;
     @include flexbox;
 
     .cards__container {
       width: 80%;
-      height: 400px;
+      min-height: 400px;
       // background-color: lightcoral;
-      @include flexbox;
+      // @include flexbox;
+      // justify-content: space-between;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 250px);
+      grid-row-gap: 60px;
+      grid-column-gap: 20px;
       justify-content: space-between;
       .card {
         width: 250px;
@@ -251,12 +263,12 @@
       background-repeat: no-repeat;
       .hiw__container {
         width: 60%;
-        height: 400px;
+        min-height: 400px;
         // background-color: lightgreen;
 
         .hiw__heading {
           width: 100%;
-          height: 100px;
+          min-height: 100px;
           // background-color: lightcoral;
           @include flexbox;
 
@@ -270,7 +282,7 @@
 
         .hiw__description {
           width: 100%;
-          height: 150px;
+          min-height: 150px;
 
           p {
             color: $white;
@@ -285,32 +297,326 @@
   /* Timeline */
   .timeline {
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     @include flexbox;
     .timeline__container {
       width: 80%;
-      height: 700px;
-      background-color: lightgreen;
+      min-height: 700px;
+      // background-color: lightgreen;
 
       .timeline__heading {
         width: 100%;
         height: 100px;
-        background-color: lightcoral;
+        // background-color: lightcoral;
         @include flexbox;
         p {
           font-size: $font-extra-large;
           font-weight: bold;
           color: $green;
           text-transform: uppercase;
+          text-align: center;
+        }
+      }
+
+      .timeline__body {
+        width: 100%;
+        min-height: 700px;
+        // background-color: lightpink;
+        @include flexbox;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .timeline__item1 {
+          width: 80%;
+          min-height: 250px;
+          // background-color: lightgreen;
+          @include flexbox;
+          .timeline__item1__content {
+            height: 100%;
+            width: calc((100% - 80px) / 2);
+            // background-color: lightblue;
+            @include flexbox;
+
+            .timeline__item1__content__card {
+              width: 100%;
+              height: 220px;
+              // background-color: lightblue;
+
+              @include flexbox;
+              flex-direction: column;
+
+              border: 1.5px solid $green;
+              border-radius: 25px;
+              box-shadow: 0px 0px 27px -2px $green;
+
+              .timeline__item1__content__card__title {
+                width: 100%;
+                height: 50px;
+                // background-color: lightseagreen;
+                @include flexbox;
+
+                p {
+                  font-size: $font-medium;
+                  text-transform: uppercase;
+                  text-align: center;
+                  font-weight: bold;
+                  color: $green;
+                }
+              }
+              .timeline__item1__content__card__body {
+                width: 100%;
+                height: 100px;
+                // background-color: lightsalmon;
+
+                p {
+                  font-size: $font-small;
+                  color: $white;
+                  text-align: center;
+                  padding: 5px 15px;
+                }
+              }
+              .timeline__item1__content__card__button {
+                width: 100%;
+                height: 70px;
+                // background-color: lightgreen;
+                a {
+                  width: 100%;
+                  height: 100%;
+                  @include flexbox;
+                  text-decoration: none;
+                  button {
+                    @include buttonBlueDark;
+                    font-size: $font-small;
+                  }
+                }
+              }
+            }
+          }
+          .timeline__item1__border {
+            height: 100%;
+            width: 80px;
+            // background-color: lightyellow;
+            @include flexbox;
+            position: relative;
+            .timeline__item1__border__line {
+              width: 3px;
+              height: 250px;
+              background-color: $green;
+            }
+
+            .timeline__item1__border__image {
+              width: 50px;
+              height: 50px;
+              // background-color: lightseagreen;
+              background-color: $bgBlue;
+
+              position: absolute;
+              border-radius: 50%;
+              border: 3px solid $green;
+              @include flexbox;
+              img {
+                height: 30px;
+                object-fit: contain;
+                object-position: center;
+              }
+            }
+          }
+          .timeline__item1__date {
+            height: 100%;
+            width: calc((100% - 80px) / 2);
+            // background-color: lightblue;
+            @include flexbox;
+
+            .timeline__item1__date__box {
+              width: 100%;
+              height: 50px;
+              background-color: $blue;
+              @include flexbox;
+              p {
+                color: $bgBlue;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+        .timeline__item2 {
+          width: 80%;
+          min-height: 250px;
+          // background-color: lightgreen;
+          @include flexbox;
+          .timeline__item2__content {
+            height: 100%;
+            width: calc((100% - 80px) / 2);
+            // background-color: lightblue;
+            @include flexbox;
+
+            .timeline__item2__content__card {
+              width: 100%;
+              height: 220px;
+              // background-color: lightblue;
+
+              @include flexbox;
+              flex-direction: column;
+
+              border: 1.5px solid $green;
+              border-radius: 25px;
+              box-shadow: 0px 0px 27px -2px $green;
+
+              .timeline__item2__content__card__title {
+                width: 100%;
+                height: 50px;
+                // background-color: lightseagreen;
+                @include flexbox;
+
+                p {
+                  font-size: $font-medium;
+                  text-transform: uppercase;
+                  text-align: center;
+                  font-weight: bold;
+                  color: $green;
+                }
+              }
+              .timeline__item2__content__card__body {
+                width: 100%;
+                height: 100px;
+                // background-color: lightsalmon;
+
+                p {
+                  font-size: $font-small;
+                  color: $white;
+                  text-align: center;
+                  padding: 5px 15px;
+                }
+              }
+              .timeline__item2__content__card__button {
+                width: 100%;
+                height: 70px;
+                // background-color: lightgreen;
+                a {
+                  width: 100%;
+                  height: 100%;
+                  @include flexbox;
+                  text-decoration: none;
+                  button {
+                    @include buttonBlueDark;
+                    font-size: $font-small;
+                  }
+                }
+              }
+            }
+          }
+          .timeline__item2__border {
+            height: 100%;
+            width: 80px;
+            // background-color: lightyellow;
+            @include flexbox;
+            position: relative;
+            .timeline__item2__border__line {
+              width: 3px;
+              height: 250px;
+              background-color: $green;
+            }
+
+            .timeline__item2__border__image {
+              width: 50px;
+              height: 50px;
+              // background-color: lightseagreen;
+              background-color: $bgBlue;
+
+              position: absolute;
+              border-radius: 50%;
+              border: 3px solid $green;
+              @include flexbox;
+              img {
+                height: 30px;
+                object-fit: contain;
+                object-position: center;
+              }
+            }
+          }
+          .timeline__item2__date {
+            height: 100%;
+            width: calc((100% - 80px) / 2);
+            // background-color: lightblue;
+            @include flexbox;
+
+            .timeline__item2__date__box {
+              width: 100%;
+              height: 50px;
+              background-color: $blue;
+              @include flexbox;
+              p {
+                color: $bgBlue;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+            }
+          }
         }
       }
     }
   }
+  /* Rules */
+  .rules {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../../images/WhatIsHackMoral4.0.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flexbox;
 
+    .rules__overlay {
+      width: 100%;
+      min-height: 100vh;
+      @include flexbox;
+
+      background-image: url(../../images/ShadowOverlay.png);
+      background-position: bottom center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      .rules__container {
+        width: 80%;
+        min-height: 100vh;
+        // background-color: lightgreen;
+
+        .rules__heading {
+          width: 100%;
+          height: 100px;
+          // background-color: lightcoral;
+          @include flexbox;
+
+          p {
+            font-size: $font-extra-large;
+            font-weight: bold;
+            color: $green;
+            text-transform: uppercase;
+          }
+        }
+
+        .rules__body {
+          width: 100%;
+          min-height: 500px;
+          // background-color: lightseagreen;
+
+          ul {
+            margin-left: 12px;
+            li {
+              color: $white;
+              padding: 10px 0px;
+              font-size: $font-small;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
   /* Awards */
   .awards {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     // background-color: lightcoral;
     @include flexbox;
     flex-direction: column;
@@ -330,7 +636,7 @@
 
     .awards__container {
       width: 80%;
-      height: calc(100vh - 200px);
+      min-height: calc(100vh - 200px);
       // background-color: lightblue;
       @include flexbox;
       justify-content: space-between;
@@ -450,13 +756,38 @@
 
     .awards__footer {
       width: 100%;
-      height: 100px;
+      height: 200px;
       // background-color: lightseagreen;
       @include flexbox;
-      p {
-        font-size: $font-small;
-        font-weight: bold;
-        color: $white;
+      flex-direction: column;
+      .awards__footer__text {
+        width: 90%;
+        height: 100px;
+        // background-color: lightcoral;
+        @include flexbox;
+        margin: 0px auto;
+        p {
+          font-size: $font-small;
+          font-weight: bold;
+          color: $white;
+          text-align: center;
+        }
+      }
+      .awards__footer__button {
+        width: 90%;
+        height: 100px;
+        // background-color: lightgreen;
+        @include flexbox;
+
+        margin: 0px auto;
+        a {
+          @include flexbox;
+          text-decoration: none;
+          button {
+            @include buttonGreenDark;
+            width: 300px;
+          }
+        }
       }
     }
   }
@@ -468,7 +799,7 @@
     // background-color: lightgrey;
     @include flexbox;
     .footer__container {
-      width: 80%;
+      width: 90%;
       height: 100%;
       // background-color: lightcoral;
       @include flexbox;
@@ -482,6 +813,9 @@
           height: 70px;
           object-fit: contain;
           object-position: center;
+        }
+        :nth-child(2) {
+          display: none;
         }
       }
       .footer__content {
@@ -521,6 +855,7 @@
           p {
             font-size: $font-small;
             color: $white;
+            text-align: center;
           }
         }
       }
@@ -533,6 +868,425 @@
           height: 70px;
           object-fit: contain;
           object-position: center;
+        }
+      }
+    }
+  }
+}
+
+//Media Queries
+
+//? Landing Page
+
+// ----- WIDTH -----
+// MAX-WIDTH : 500px
+@media (max-width: "500px") {
+  .hackmoral {
+    .landingPage {
+      .landingPage__overlay {
+        .landingPage__container {
+          width: 90%;
+
+          .landingPage__image {
+            img {
+              height: 300px;
+            }
+          }
+          .landingPage__countdown {
+            .landingPage__countdown__item {
+              width: calc((100% - 60px) / 4);
+              .landingPage__countdown__item__number {
+                width: 70%;
+                font-size: 28px;
+              }
+              .landingPage__countdown__item__word {
+                width: 30%;
+                font-size: $font-light;
+              }
+            }
+            .landingPage__countdown__dot {
+              width: 20px;
+
+              :nth-child(1) {
+                min-width: 4px;
+                min-height: 4px;
+                background-color: $white;
+                margin-bottom: 5px;
+              }
+              :nth-child(2) {
+                min-width: 4px;
+                min-height: 4px;
+                background-color: $white;
+                margin-top: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// MAX-WIDTH : 350px
+@media (max-width: "350px") {
+  .hackmoral {
+    .landingPage {
+      .landingPage__overlay {
+        .landingPage__container {
+          width: 90%;
+          height: 560px;
+          .landingPage__image {
+            img {
+              height: 300px;
+            }
+          }
+          .landingPage__countdown {
+            .landingPage__countdown__item {
+              width: calc((100% - 60px) / 4);
+              .landingPage__countdown__item__number {
+                width: 70%;
+                font-size: 28px;
+              }
+              .landingPage__countdown__item__word {
+                width: 30%;
+                font-size: $font-light;
+              }
+            }
+            .landingPage__countdown__dot {
+              width: 20px;
+
+              :nth-child(1) {
+                min-width: 4px;
+                min-height: 4px;
+                background-color: $white;
+                margin-bottom: 5px;
+              }
+              :nth-child(2) {
+                min-width: 4px;
+                min-height: 4px;
+                background-color: $white;
+                margin-top: 5px;
+              }
+            }
+          }
+
+          .landingPage__buttons {
+            flex-direction: column;
+            height: 160px;
+
+            .landingPage__buttons__contest {
+              @include buttonGreenDark;
+              margin-right: 0px;
+              margin-bottom: 5px;
+            }
+            .landingPage__buttons__leaderboard {
+              @include buttonBlueDark;
+              margin-left: 0px;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ----- HEIGHT -----
+// MAX-HEIGHT : 600px
+@media (max-height: "600px") {
+  .hackmoral {
+    .landingPage {
+      height: 600px;
+      .landingPage__overlay {
+        height: 600px;
+      }
+    }
+  }
+}
+
+//? What is HackMoral | Introduction
+
+// ----- WIDTH -----
+// MAX-WIDTH : 900px
+@media (max-width: "900px") {
+  .hackmoral {
+    .introduction {
+      .introduction__overlay {
+        .introduction__container {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+// MAX-WIDTH : 600px
+@media (max-width: "600px") {
+  .hackmoral {
+    .introduction {
+      .introduction__overlay {
+        .introduction__container {
+          width: 80%;
+
+          .introduction__heading {
+            height: 80px;
+          }
+
+          .introduction__description {
+            min-height: 150px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ----- HEIGHT -----
+// MAX-HEIGHT : 500px
+@media (max-height: "500px") {
+  .hackmoral {
+    .introduction {
+      height: 500px;
+      .introduction__overlay {
+        height: 500px;
+      }
+    }
+  }
+}
+
+//? About | Cards
+// ----- WIDTH -----
+// MAX-WIDTH : 1000px
+@media (max-width: "1000px") {
+  .hackmoral {
+    .cards {
+      .cards__container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 60px;
+        grid-column-gap: 20px;
+        justify-content: space-between;
+
+        padding: 40px 0px;
+        .card {
+          margin: 0px auto;
+        }
+      }
+    }
+  }
+}
+
+//? How it Works
+// ----- WIDTH -----
+// MAX-WIDTH : 900px
+@media (max-width: "900px") {
+  .hackmoral {
+    .hiw {
+      .hiw__overlay {
+        .hiw__container {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+// MAX-WIDTH : 600px
+@media (max-width: "600px") {
+  .hackmoral {
+    .hiw {
+      .hiw__overlay {
+        .hiw__container {
+          width: 80%;
+
+          .hiw__heading {
+            height: 80px;
+          }
+
+          .hiw__description {
+            min-height: 150px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ----- HEIGHT -----
+// MAX-HEIGHT : 500px
+@media (max-height: "500px") {
+  .hackmoral {
+    .hiw {
+      height: 500px;
+      .hiw__overlay {
+        height: 500px;
+      }
+    }
+  }
+}
+
+//? Timeline
+// ----- WIDTH -----
+// MAX-WIDTH : 900px
+@media (max-width: "900px") {
+  .hackmoral {
+    .timeline {
+      .timeline__container {
+        .timeline__body {
+          .timeline__item1 {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// MAX-WIDTH : 900px
+@media (max-width: "700px") {
+  .hackmoral {
+    .timeline {
+      .timeline__container {
+        .timeline__body {
+          .timeline__item1 {
+            width: 100%;
+            flex-direction: column-reverse;
+            margin: 10px 0px 20px 0px;
+            .timeline__item1__content {
+              width: 100%;
+            }
+            .timeline__item1__border {
+              height: 80px;
+              width: 100%;
+              .timeline__item1__border__line {
+                height: 3px;
+                width: 100%;
+              }
+            }
+            .timeline__item1__date {
+              width: 100%;
+            }
+          }
+
+          .timeline__item2 {
+            width: 100%;
+            flex-direction: column;
+            margin: 10px 0px 20px 0px;
+            .timeline__item2__content {
+              width: 100%;
+            }
+            .timeline__item2__border {
+              height: 80px;
+              width: 100%;
+              .timeline__item2__border__line {
+                height: 3px;
+                width: 100%;
+              }
+            }
+            .timeline__item2__date {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//? Rules & Regulations
+// ----- WIDTH -----
+// MAX-WIDTH : 900px
+@media (max-width: "600px") {
+  .hackmoral {
+    .rules {
+      min-height: 800px;
+      .rules__overlay {
+        min-height: 800px;
+
+        .rules__container {
+          min-height: 800px;
+        }
+      }
+    }
+  }
+}
+
+//? Awards
+// ----- WIDTH -----
+// MAX-WIDTH : 1000px
+@media (max-width: "1000px") {
+  .hackmoral {
+    .awards {
+      // min-height: 1800px;
+      .awards__container {
+        width: 90%;
+        display: grid;
+        grid-row-gap: 60px;
+        grid-column-gap: 20px;
+        grid-template-columns: 100%;
+        .awards__cards,
+        .awards__card1,
+        .awards__card2,
+        .awards__card3 {
+          margin: 0px auto;
+        }
+      }
+      .awards__footer {
+        .awards__footer__button {
+          button {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ----- WIDTH -----
+// MAX-WIDTH : 400px
+@media (max-width: "400px") {
+  .hackmoral {
+    .awards {
+      // min-height: 1800px;
+
+      .awards__footer {
+        .awards__footer__button {
+          a {
+            width: 100%;
+            button {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//? Footer
+// ----- WIDTH -----
+// MAX-WIDTH : 500px
+@media (max-width: "500px") {
+  .hackmoral {
+    .footer {
+      .footer__container {
+        flex-direction: column;
+        .footer__intecs {
+          width: 100%;
+          @include flexbox;
+          justify-content: space-between;
+          :nth-child(2) {
+            display: block;
+          }
+        }
+        .footer__content {
+          width: 100%;
+        }
+        .footer__uom {
+          display: none;
         }
       }
     }
