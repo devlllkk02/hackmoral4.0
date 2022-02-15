@@ -179,14 +179,14 @@
       width: 80%;
       min-height: 400px;
       // background-color: lightcoral;
-      // @include flexbox;
-      // justify-content: space-between;
-
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 250px);
-      grid-row-gap: 60px;
-      grid-column-gap: 20px;
+      @include flexbox;
       justify-content: space-between;
+
+      // display: grid;
+      // grid-template-columns: repeat(auto-fill, 250px);
+      // grid-row-gap: 60px;
+      // grid-column-gap: 20px;
+      // justify-content: space-between;
       .card {
         width: 250px;
         height: 350px;
