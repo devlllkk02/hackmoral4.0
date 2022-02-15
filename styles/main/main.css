@@ -5,6 +5,16 @@
           box-sizing: border-box;
 }
 
+::-moz-selection {
+  color: #020a1f;
+  background: #65f0de;
+}
+
+::selection {
+  color: #020a1f;
+  background: #65f0de;
+}
+
 .hackmoral {
   font-family: "Mulish", sans-serif;
   background-color: #020a1f;
@@ -24,8 +34,8 @@
 }
 
 .hackmoral .landingPage .landingPage__overlay {
-  height: 100vh;
   width: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,7 +241,7 @@
 
 .hackmoral .introduction {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../../images/WhatIsHackMoral4.0.png);
   background-position: top center;
   background-size: cover;
@@ -249,7 +259,7 @@
 
 .hackmoral .introduction .introduction__overlay {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,7 +277,7 @@
 
 .hackmoral .introduction .introduction__overlay .introduction__container {
   width: 60%;
-  height: 400px;
+  min-height: 400px;
 }
 
 .hackmoral .introduction .introduction__overlay .introduction__container .introduction__heading {
@@ -289,11 +299,12 @@
   font-weight: bold;
   color: #65f0de;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hackmoral .introduction .introduction__overlay .introduction__container .introduction__description {
   width: 100%;
-  height: 150px;
+  min-height: 150px;
 }
 
 .hackmoral .introduction .introduction__overlay .introduction__container .introduction__description p {
@@ -304,7 +315,7 @@
 
 .hackmoral .cards {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,16 +329,13 @@
 
 .hackmoral .cards .cards__container {
   width: 80%;
-  height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  min-height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (250px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 250px);
+  grid-row-gap: 60px;
+  grid-column-gap: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -459,12 +467,12 @@
 
 .hackmoral .hiw .hiw__overlay .hiw__container {
   width: 60%;
-  height: 400px;
+  min-height: 400px;
 }
 
 .hackmoral .hiw .hiw__overlay .hiw__container .hiw__heading {
   width: 100%;
-  height: 100px;
+  min-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,7 +493,7 @@
 
 .hackmoral .hiw .hiw__overlay .hiw__container .hiw__description {
   width: 100%;
-  height: 150px;
+  min-height: 150px;
 }
 
 .hackmoral .hiw .hiw__overlay .hiw__container .hiw__description p {
@@ -532,6 +540,7 @@
   font-weight: bold;
   color: #65f0de;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hackmoral .timeline .timeline__container .timeline__body {
@@ -557,7 +566,7 @@
 
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 {
   width: 80%;
-  height: 250px;
+  min-height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,7 +594,7 @@
 
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card {
   width: 100%;
-  height: 200px;
+  height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,7 +616,7 @@
 
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__title {
   width: 100%;
-  height: 60px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,13 +631,14 @@
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__title p {
   font-size: 16px;
   text-transform: uppercase;
+  text-align: center;
   font-weight: bold;
   color: #65f0de;
 }
 
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__body {
   width: 100%;
-  height: 70px;
+  height: 100px;
 }
 
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__body p {
@@ -762,7 +772,7 @@
 
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 {
   width: 80%;
-  height: 250px;
+  min-height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -790,7 +800,7 @@
 
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card {
   width: 100%;
-  height: 200px;
+  height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -812,7 +822,7 @@
 
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__title {
   width: 100%;
-  height: 60px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,13 +837,14 @@
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__title p {
   font-size: 16px;
   text-transform: uppercase;
+  text-align: center;
   font-weight: bold;
   color: #65f0de;
 }
 
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__body {
   width: 100%;
-  height: 70px;
+  height: 100px;
 }
 
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__body p {
@@ -967,7 +978,7 @@
 
 .hackmoral .rules {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../../images/WhatIsHackMoral4.0.png);
   background-position: top center;
   background-size: cover;
@@ -985,7 +996,7 @@
 
 .hackmoral .rules .rules__overlay {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1003,7 +1014,7 @@
 
 .hackmoral .rules .rules__overlay .rules__container {
   width: 80%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .hackmoral .rules .rules__overlay .rules__container .rules__heading {
@@ -1029,7 +1040,7 @@
 
 .hackmoral .rules .rules__overlay .rules__container .rules__body {
   width: 100%;
-  height: 500px;
+  min-height: 500px;
 }
 
 .hackmoral .rules .rules__overlay .rules__container .rules__body ul {
@@ -1045,7 +1056,7 @@
 
 .hackmoral .awards {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1084,7 +1095,7 @@
 
 .hackmoral .awards .awards__container {
   width: 80%;
-  height: calc(100vh - 200px);
+  min-height: calc(100vh - 200px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1278,6 +1289,24 @@
 
 .hackmoral .awards .awards__footer {
   width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hackmoral .awards .awards__footer .awards__footer__text {
+  width: 90%;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1288,12 +1317,62 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0px auto;
 }
 
-.hackmoral .awards .awards__footer p {
+.hackmoral .awards .awards__footer .awards__footer__text p {
   font-size: 14px;
   font-weight: bold;
   color: #ffffff;
+  text-align: center;
+}
+
+.hackmoral .awards .awards__footer .awards__footer__button {
+  width: 90%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto;
+}
+
+.hackmoral .awards .awards__footer .awards__footer__button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.hackmoral .awards .awards__footer .awards__footer__button a button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  color: #020a1f;
+  background-color: #65f0de;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 300px;
+}
+
+.hackmoral .awards .awards__footer .awards__footer__button a button:hover {
+  background-color: #15dac0;
 }
 
 .hackmoral .footer {
@@ -1311,7 +1390,7 @@
 }
 
 .hackmoral .footer .footer__container {
-  width: 80%;
+  width: 90%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1344,6 +1423,10 @@
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+}
+
+.hackmoral .footer .footer__container .footer__intecs :nth-child(2) {
+  display: none;
 }
 
 .hackmoral .footer .footer__container .footer__content {
@@ -1432,6 +1515,7 @@
 .hackmoral .footer .footer__container .footer__content .footer__content__copyright p {
   font-size: 14px;
   color: #ffffff;
+  text-align: center;
 }
 
 .hackmoral .footer .footer__container .footer__uom {
@@ -1454,5 +1538,333 @@
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+}
+
+@media (max-width: 500px) {
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container {
+    width: 90%;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__image img {
+    height: 300px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__item {
+    width: calc((100% - 60px) / 4);
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__item .landingPage__countdown__item__number {
+    width: 70%;
+    font-size: 28px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__item .landingPage__countdown__item__word {
+    width: 30%;
+    font-size: 10px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__dot {
+    width: 20px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__dot :nth-child(1) {
+    min-width: 4px;
+    min-height: 4px;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__dot :nth-child(2) {
+    min-width: 4px;
+    min-height: 4px;
+    background-color: #ffffff;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 350px) {
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container {
+    width: 90%;
+    height: 560px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__image img {
+    height: 300px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__item {
+    width: calc((100% - 60px) / 4);
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__item .landingPage__countdown__item__number {
+    width: 70%;
+    font-size: 28px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__item .landingPage__countdown__item__word {
+    width: 30%;
+    font-size: 10px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__dot {
+    width: 20px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__dot :nth-child(1) {
+    min-width: 4px;
+    min-height: 4px;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__countdown .landingPage__countdown__dot :nth-child(2) {
+    min-width: 4px;
+    min-height: 4px;
+    background-color: #ffffff;
+    margin-top: 5px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 160px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__buttons .landingPage__buttons__contest {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    color: #020a1f;
+    background-color: #65f0de;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__buttons .landingPage__buttons__contest:hover {
+    background-color: #15dac0;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__buttons .landingPage__buttons__leaderboard {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    color: #020a1f;
+    background-color: #0dc8fe;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+  .hackmoral .landingPage .landingPage__overlay .landingPage__container .landingPage__buttons .landingPage__buttons__leaderboard:hover {
+    background-color: #01a7d7;
+  }
+}
+
+@media (max-height: 600px) {
+  .hackmoral .landingPage {
+    height: 600px;
+  }
+  .hackmoral .landingPage .landingPage__overlay {
+    height: 600px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hackmoral .introduction .introduction__overlay .introduction__container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hackmoral .introduction .introduction__overlay .introduction__container {
+    width: 80%;
+  }
+  .hackmoral .introduction .introduction__overlay .introduction__container .introduction__heading {
+    height: 80px;
+  }
+  .hackmoral .introduction .introduction__overlay .introduction__container .introduction__description {
+    min-height: 150px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-height: 500px) {
+  .hackmoral .introduction {
+    height: 500px;
+  }
+  .hackmoral .introduction .introduction__overlay {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hackmoral .cards .cards__container {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-row-gap: 60px;
+    grid-column-gap: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 40px 0px;
+  }
+  .hackmoral .cards .cards__container .card {
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .hackmoral .hiw .hiw__overlay .hiw__container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hackmoral .hiw .hiw__overlay .hiw__container {
+    width: 80%;
+  }
+  .hackmoral .hiw .hiw__overlay .hiw__container .hiw__heading {
+    height: 80px;
+  }
+  .hackmoral .hiw .hiw__overlay .hiw__container .hiw__description {
+    min-height: 150px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-height: 500px) {
+  .hackmoral .hiw {
+    height: 500px;
+  }
+  .hackmoral .hiw .hiw__overlay {
+    height: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 10px 0px 20px 0px;
+  }
+  .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content {
+    width: 100%;
+  }
+  .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__border {
+    height: 80px;
+    width: 100%;
+  }
+  .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__border .timeline__item1__border__line {
+    height: 3px;
+    width: 100%;
+  }
+  .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__date {
+    width: 100%;
+  }
+  .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px 0px 20px 0px;
+  }
+  .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content {
+    width: 100%;
+  }
+  .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__border {
+    height: 80px;
+    width: 100%;
+  }
+  .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__border .timeline__item2__border__line {
+    height: 3px;
+    width: 100%;
+  }
+  .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__date {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hackmoral .rules {
+    min-height: 800px;
+  }
+  .hackmoral .rules .rules__overlay {
+    min-height: 800px;
+  }
+  .hackmoral .rules .rules__overlay .rules__container {
+    min-height: 800px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hackmoral .awards .awards__container {
+    width: 90%;
+    display: -ms-grid;
+    display: grid;
+    grid-row-gap: 60px;
+    grid-column-gap: 20px;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .hackmoral .awards .awards__container .awards__cards,
+  .hackmoral .awards .awards__container .awards__card1,
+  .hackmoral .awards .awards__container .awards__card2,
+  .hackmoral .awards .awards__container .awards__card3 {
+    margin: 0px auto;
+  }
+  .hackmoral .awards .awards__footer .awards__footer__button button {
+    width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hackmoral .awards .awards__footer .awards__footer__button a {
+    width: 100%;
+  }
+  .hackmoral .awards .awards__footer .awards__footer__button a button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hackmoral .footer .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hackmoral .footer .footer__container .footer__intecs {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hackmoral .footer .footer__container .footer__intecs :nth-child(2) {
+    display: block;
+  }
+  .hackmoral .footer .footer__container .footer__content {
+    width: 100%;
+  }
+  .hackmoral .footer .footer__container .footer__uom {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
