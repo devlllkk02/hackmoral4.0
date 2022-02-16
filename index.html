@@ -14,6 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!--? Animate on Scroll  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body class="hackmoral">
     <!-- Landing Page -->
@@ -21,9 +23,29 @@
       <div class="landingPage__overlay">
         <div class="landingPage__container">
           <div class="landingPage__image">
-            <img src="./images/HackMoral4.0-Logo.png" alt="" />
+            <img
+              src="./images/HackMoral4.0-Logo.png"
+              alt=""
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            />
           </div>
-          <div class="landingPage__countdown">
+          <div
+            class="landingPage__countdown"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+          >
             <!-- Days -->
             <div class="landingPage__countdown__item">
               <div
@@ -77,7 +99,16 @@
               <div class="landingPage__countdown__item__word">SECONDS</div>
             </div>
           </div>
-          <div class="landingPage__buttons">
+          <div
+            class="landingPage__buttons"
+            class="landingPage__countdown"
+            data-aos="fade-in"
+            data-aos-offset="100"
+            data-aos-delay="1000"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
             <button class="landingPage__buttons__contest">contest</button>
             <button class="landingPage__buttons__leaderboard">
               leaderboard
@@ -330,7 +361,10 @@
                   </p>
                 </div>
                 <div class="timeline__item2__content__card__button">
-                  <a href="https://bit.ly/HackMoral_Registration_Form" target="_blank">
+                  <a
+                    href="https://bit.ly/HackMoral_Registration_Form"
+                    target="_blank"
+                  >
                     <button>Register Now</button>
                   </a>
                 </div>
@@ -601,22 +635,10 @@
     <script src="/lib/three.r119.min.js"></script>
     <script src="/lib/vanta.net.min.js"></script>
     <script src="/vanta.js"></script>
-    <!-- <script>
-      VANTA.NET({
-        el: "#landingPage",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 100.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: "#65f0de",
-        backgroundColor: "#010f2b",
-        points: 15.0,
-        maxDistance: 20.0,
-      });
-    </script> -->
     <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
