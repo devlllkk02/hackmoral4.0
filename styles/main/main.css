@@ -654,11 +654,6 @@
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__button {
   width: 100%;
   height: 70px;
-}
-
-.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__button a {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,10 +663,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__button a button {
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__button button {
   width: 150px;
   height: 40px;
   border: none;
@@ -687,8 +684,13 @@
   font-size: 14px;
 }
 
-.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__button a button:hover {
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__button button:hover {
   background-color: #01a7d7;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__content .timeline__item1__content__card .timeline__item1__content__card__button button a {
+  text-decoration: none;
+  color: #020a1f;
 }
 
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 .timeline__item1__border {
@@ -860,11 +862,6 @@
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__button {
   width: 100%;
   height: 70px;
-}
-
-.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__button a {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -874,10 +871,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__button a button {
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__button button {
   width: 150px;
   height: 40px;
   border: none;
@@ -893,8 +892,13 @@
   font-size: 14px;
 }
 
-.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__button a button:hover {
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__button button:hover {
   background-color: #01a7d7;
+}
+
+.hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__content .timeline__item2__content__card .timeline__item2__content__card__button button a {
+  text-decoration: none;
+  color: #020a1f;
 }
 
 .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 .timeline__item2__border {
@@ -1745,6 +1749,9 @@
 
 @media (max-width: 900px) {
   .hackmoral .timeline .timeline__container .timeline__body .timeline__item1 {
+    width: 100%;
+  }
+  .hackmoral .timeline .timeline__container .timeline__body .timeline__item2 {
     width: 100%;
   }
 }
