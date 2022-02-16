@@ -171,12 +171,14 @@
   /* About | Cards */
   .cards {
     width: 100%;
+    // max-width: 1000px;
     min-height: 100vh;
     // background-color: lightgreen;
     @include flexbox;
 
     .cards__container {
       width: 80%;
+      max-width: 1000px;
       min-height: 400px;
       // background-color: lightcoral;
       @include flexbox;
@@ -299,6 +301,7 @@
     width: 100%;
     min-height: 700px;
     @include flexbox;
+    padding-bottom: 50px;
     .timeline__container {
       width: 80%;
       min-height: 700px;
@@ -582,12 +585,13 @@
       background-repeat: no-repeat;
       .rules__container {
         width: 80%;
+        max-width: 1000px;
         min-height: 100vh;
         // background-color: lightgreen;
 
         .rules__heading {
           width: 100%;
-          height: 100px;
+          height: 150px;
           // background-color: lightcoral;
           @include flexbox;
 
@@ -640,6 +644,7 @@
 
     .awards__container {
       width: 80%;
+      max-width: 1000px;
       min-height: calc(100vh - 200px);
       // background-color: lightblue;
       @include flexbox;

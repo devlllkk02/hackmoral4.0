@@ -329,6 +329,7 @@
 
 .hackmoral .cards .cards__container {
   width: 80%;
+  max-width: 1000px;
   min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,6 +518,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 50px;
 }
 
 .hackmoral .timeline .timeline__container {
@@ -1021,12 +1023,13 @@
 
 .hackmoral .rules .rules__overlay .rules__container {
   width: 80%;
+  max-width: 1000px;
   min-height: 100vh;
 }
 
 .hackmoral .rules .rules__overlay .rules__container .rules__heading {
   width: 100%;
-  height: 100px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1102,6 +1105,7 @@
 
 .hackmoral .awards .awards__container {
   width: 80%;
+  max-width: 1000px;
   min-height: calc(100vh - 200px);
   display: -webkit-box;
   display: -ms-flexbox;
