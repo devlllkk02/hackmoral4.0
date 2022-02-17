@@ -25,7 +25,7 @@
 .committee .committee__overlay {
   width: 100%;
   min-height: 500px;
-  background-color: rgba(2, 10, 31, 0.7);
+  background-color: rgba(2, 10, 31, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

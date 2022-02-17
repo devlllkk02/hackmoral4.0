@@ -1,5 +1,5 @@
 function countdown() {
-  let dueDate = new Date("February 19, 2022 00:00:00");
+  let dueDate = new Date("February 19, 2022 18:00:00");
   let nowDate = new Date();
 
   let timeDifference = dueDate.getTime() - nowDate.getTime();

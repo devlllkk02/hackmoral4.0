@@ -19,7 +19,7 @@
   .committee__overlay {
     width: 100%;
     min-height: 500px;
-    background-color: rgba($color: $bgBlue, $alpha: 0.7);
+    background-color: rgba($color: $bgBlue, $alpha: 0.5);
     @include flexbox;
     .committee__container {
       width: 90%;

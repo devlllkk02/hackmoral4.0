@@ -247,7 +247,7 @@
   /* How it Works */
   .hiw {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../../images/HowItWorks.png);
     background-position: top center;
     background-size: cover;
@@ -256,7 +256,7 @@
 
     .hiw__overlay {
       width: 100%;
-      height: 100vh;
+      min-height: 100vh;
       @include flexbox;
 
       background-image: url(../../images/ShadowOverlay.png);
@@ -284,12 +284,35 @@
 
         .hiw__description {
           width: 100%;
-          min-height: 150px;
+          min-height: 100px;
 
           p {
             color: $white;
             font-size: $font-medium;
             text-align: center;
+          }
+        }
+
+        .hiw__youtube {
+          width: 100%;
+          min-height: 150px;
+          // background-color: lightseagreen;
+
+          @include flexbox;
+          flex-direction: column;
+
+          p {
+            size: $font-medium;
+            color: $white;
+            font-weight: bold;
+            font-style: italic;
+            margin-bottom: 20px;
+            text-align: center
+          }
+
+          button {
+            @include buttonBlueDark;
+            width: 250px;
           }
         }
       }
@@ -804,7 +827,7 @@
   /* Footer */
   .footer {
     width: 100%;
-    height: 150px;
+    height: 250px;
     // background-color: lightgrey;
     @include flexbox;
     .footer__container {
@@ -812,24 +835,22 @@
       height: 100%;
       // background-color: lightcoral;
       @include flexbox;
-      .footer__intecs {
-        width: 100px;
-        height: 100%;
-        // background-color: lightgreen;
+      flex-direction: column;
+
+      .footer__logos {
+        width: 100%;
+        height: 150px;
+        // background-color: lightseagreen;
         @include flexbox;
 
         img {
-          height: 70px;
-          object-fit: contain;
-          object-position: center;
-        }
-        :nth-child(2) {
-          display: none;
+          height: 80px;
+          margin: 0px 30px;
         }
       }
       .footer__content {
-        width: calc(100% - 200px);
-        height: 100%;
+        width: 100%;
+        height: 100px;
         @include flexbox;
         flex-direction: column;
         .footer__content__links {
@@ -866,17 +887,6 @@
             color: $white;
             text-align: center;
           }
-        }
-      }
-      .footer__uom {
-        width: 100px;
-        height: 100%;
-        // background-color: lightgreen;
-        @include flexbox;
-        img {
-          height: 70px;
-          object-fit: contain;
-          object-position: center;
         }
       }
     }
@@ -1106,6 +1116,7 @@
 @media (max-width: "600px") {
   .hackmoral {
     .hiw {
+      min-height: 700px;
       .hiw__overlay {
         .hiw__container {
           width: 80%;
@@ -1115,7 +1126,7 @@
           }
 
           .hiw__description {
-            min-height: 150px;
+            min-height: 100px;
             margin-bottom: 20px;
           }
         }
@@ -1285,21 +1296,6 @@
   .hackmoral {
     .footer {
       .footer__container {
-        flex-direction: column;
-        .footer__intecs {
-          width: 100%;
-          @include flexbox;
-          justify-content: space-between;
-          :nth-child(2) {
-            display: block;
-          }
-        }
-        .footer__content {
-          width: 100%;
-        }
-        .footer__uom {
-          display: none;
-        }
       }
     }
   }
