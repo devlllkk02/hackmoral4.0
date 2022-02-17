@@ -1,0 +1,204 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-moz-selection {
+  color: #020a1f;
+  background: #65f0de;
+}
+
+::selection {
+  color: #020a1f;
+  background: #65f0de;
+}
+
+.committee {
+  width: 100%;
+  min-height: 500px;
+  font-family: "Mulish", sans-serif;
+  background-color: #020a1f;
+}
+
+.committee .committee__overlay {
+  width: 100%;
+  min-height: 500px;
+  background-color: rgba(2, 10, 31, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.committee .committee__overlay .committee__container {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 500px;
+}
+
+.committee .committee__overlay .committee__container .committee__heading {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.committee .committee__overlay .committee__container .committee__heading p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #65f0de;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.committee .committee__overlay .committee__container .committee__subheading {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.committee .committee__overlay .committee__container .committee__subheading .committee__subheading__container {
+  min-width: 200px;
+  height: 40px;
+  background-color: #0dc8fe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.committee .committee__overlay .committee__container .committee__subheading .committee__subheading__container p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #020a1f;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0px 10px;
+}
+
+.committee .committee__overlay .committee__container .committee__body {
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (200px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 200px);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.committee .committee__overlay .committee__container .committee__body .committee__item {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.committee .committee__overlay .committee__container .committee__body .committee__item .committee__item__image {
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.committee .committee__overlay .committee__container .committee__body .committee__item .committee__item__image img {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: 3px solid #65f0de;
+  border-radius: 50%;
+}
+
+.committee .committee__overlay .committee__container .committee__body .committee__item .committee__item__name {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.committee .committee__overlay .committee__container .committee__body .committee__item .committee__item__name p {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media (max-width: 450px) {
+  .committee .committee__overlay .committee__container .committee__subheading {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .committee .committee__overlay .committee__container .committee__subheading .committee__subheading__container {
+    width: 100%;
+  }
+  .committee .committee__overlay .committee__container .committee__body {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .committee .committee__overlay .committee__container .committee__body .committee__item {
+    margin: 0px auto;
+  }
+}
+/*# sourceMappingURL=committee.css.map */
